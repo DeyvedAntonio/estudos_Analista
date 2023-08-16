@@ -15,10 +15,10 @@ class Cadastro(BoxLayout):
         nome = self.ids.nome.text
         saldo = self.ids.saldo.text
         if nome in usuarios:
-            print(f'Usuário {nome} já cadastrado.')
+            self.ids.resposta.text = f'Usuário {nome} já cadastrado.'
         else:
             usuarios[nome] = float(saldo)
-
+            self.ids.resposta.text = f'usuário {nome} cadastrado com sucesso!'
 
 
 class Main(App):
