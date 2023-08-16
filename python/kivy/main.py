@@ -7,8 +7,18 @@ Window.size = (600, 500)
 Window.clearcolor = (233/255, 233/255, 233/255, 1)
 
 
+usuarios = {}
+
 class Cadastro(BoxLayout):
-    pass
+    """Classe que representar a tela de cadastro."""
+    def cadastrar(self):
+        nome = self.ids.nome.text
+        saldo = self.ids.saldo.text
+        if nome in usuarios:
+            print(f'Usuário {nome} já cadastrado.')
+        else:
+            usuarios[nome] = float(saldo)
+
 
 
 class Main(App):
