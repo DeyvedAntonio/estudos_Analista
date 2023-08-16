@@ -1,22 +1,25 @@
 <Cadastro>:
     orientation: 'vertical'
     spacing: 10
+    padding: 20
     BoxLayout:
         orientation: 'vertical'
         spacing: 15
         padding: 10
         Label:
-            text: 'Insira o nome'
+            text: 'Insira o nome:'
             halign: 'left'
             color: 0, 0, 0, 1
+            text_size: self.size
         TextInput:
             id: nome
             multiline: False
-            input_filter: 'string'
+            
         Label:
-            text: 'Insira o saldo da carteira'
+            text: 'Insira o saldo da carteira:'
             halign: 'left'
             color: 0, 0, 0, 1
+            text_size: self.size
         TextInput:
             id: saldo
             multiline: False
@@ -27,3 +30,9 @@
             text: 'Cadastrar'
             on_release: root.cadastrar()
     Label:
+        id: resposta
+        color: 0, 0, 0, 1
+        font_size: 35
+        text_size: self.size
+        valign: 'center'
+        halign: 'center'
