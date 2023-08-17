@@ -1,6 +1,11 @@
 <Telas>:
     Cadastro:
         name: 'tela_cad'
+    Usuario:
+        name: 'tela_users'
+
+<Usuario>:
+    Label:
 
 <Cadastro>:
     BoxLayout:
@@ -34,6 +39,7 @@
                 size_hint_y: 1.3
                 text: 'Cadastrar'
                 on_release: root.cadastrar()
+        
         Label:
             id: resposta
             color: 0, 0, 0, 1
@@ -41,3 +47,8 @@
             text_size: self.size
             valign: 'center'
             halign: 'center'
+        
+        Button:
+            font_size: 22
+            text: 'Usuários'
+            on_release: app.root.current = 'tela_users'

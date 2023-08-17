@@ -20,6 +20,10 @@ class Telas(ScreenManager):
     pass
 
 
+class Usuario(Screen):
+    pass
+
+
 class Cadastro(Screen):
     """Classe que representar a tela de cadastro."""
     def cadastrar(self):
