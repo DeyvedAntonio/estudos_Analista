@@ -29,6 +29,8 @@ class Cadastro(BoxLayout):
             self.ids.resposta.text = f'usuário {nome} cadastrado com sucesso!'
             with open('usuarios.pkl', 'wb') as file:
                 pickle.dump(usuarios, file)
+            self.ids.nome.text = ''
+            self.ids.saldo.text = ''
         else:
             self.ids.resposta.text = 'Insira um nome.'
 
