@@ -1,38 +1,43 @@
+<Telas>:
+    Cadastro:
+        name: 'tela_cad'
+
 <Cadastro>:
-    orientation: 'vertical'
-    spacing: 10
-    padding: 20
     BoxLayout:
         orientation: 'vertical'
-        spacing: 15
-        padding: 10
+        spacing: 10
+        padding: 20
+        BoxLayout:
+            orientation: 'vertical'
+            spacing: 15
+            padding: 10
+            Label:
+                text: 'Insira o nome:'
+                halign: 'left'
+                color: 0, 0, 0, 1
+                text_size: self.size
+            TextInput:
+                id: nome
+                multiline: False
+                
+            Label:
+                text: 'Insira o saldo da carteira:'
+                halign: 'left'
+                color: 0, 0, 0, 1
+                text_size: self.size
+            TextInput:
+                id: saldo
+                multiline: False
+                input_filter: 'float'
+            Button:
+                font_size: 22
+                size_hint_y: 1.3
+                text: 'Cadastrar'
+                on_release: root.cadastrar()
         Label:
-            text: 'Insira o nome:'
-            halign: 'left'
+            id: resposta
             color: 0, 0, 0, 1
+            font_size: 35
             text_size: self.size
-        TextInput:
-            id: nome
-            multiline: False
-            
-        Label:
-            text: 'Insira o saldo da carteira:'
-            halign: 'left'
-            color: 0, 0, 0, 1
-            text_size: self.size
-        TextInput:
-            id: saldo
-            multiline: False
-            input_filter: 'float'
-        Button:
-            font_size: 22
-            size_hint_y: 1.3
-            text: 'Cadastrar'
-            on_release: root.cadastrar()
-    Label:
-        id: resposta
-        color: 0, 0, 0, 1
-        font_size: 35
-        text_size: self.size
-        valign: 'center'
-        halign: 'center'
+            valign: 'center'
+            halign: 'center'

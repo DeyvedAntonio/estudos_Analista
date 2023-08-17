@@ -1,6 +1,7 @@
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.core.window import Window
+from kivy.uix.screenmanager import Screen, ScreenManager
 import pickle
 
 
@@ -14,7 +15,12 @@ try:
 except FileNotFoundError:
     usuarios = {}
 
-class Cadastro(BoxLayout):
+
+class Telas(ScreenManager):
+    pass
+
+
+class Cadastro(Screen):
     """Classe que representar a tela de cadastro."""
     def cadastrar(self):
         nome = self.ids.nome.text
