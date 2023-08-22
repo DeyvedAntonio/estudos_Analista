@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="MySql" id="Project-2287" database="MySql" >
+	<schema name="transacional" >
+		<table name="cliente" >
+			<column name="id_cliente" type="INT" jt="4" />
+			<column name="nome_cliente" type="VARCHAR" length="100" jt="12" />
+			<column name="email_cliente" type="VARCHAR" length="50" jt="12" />
+			<column name="data_nascimento" type="DATE" jt="91" />
+			<options><![CDATA[engine=InnoDB]]></options>
+		</table>
+	</schema>
+	<connector name="MySql" database="MySql" driver_class="com.mysql.cj.jdbc.Driver" driver_jar="mysql-connector-j-8.0.32.jar" driver_desc="Standard" host="127.0.0.1" port="3307" instance="transacional" user="powerbi" passwd="ZHNhMTIz" useSystemProxy="false" />
+	<layout name="Layout" id="Layout-a88" show_relation="columns" >
+		<entity schema="transacional" name="cliente" color="3986C1" x="48" y="48" />
+	</layout>
+</project>
