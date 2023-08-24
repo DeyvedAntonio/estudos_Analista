@@ -21,7 +21,8 @@ class Telas(ScreenManager):
 
 
 class Usuario(Screen):
-    pass
+    def show(self):
+        self.ids.rel_users.text = str(usuarios)
 
 
 class Cadastro(Screen):
