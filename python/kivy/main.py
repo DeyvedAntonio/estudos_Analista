@@ -48,7 +48,7 @@ class Cadastro(Screen):
 
 class Main(App):
     def build(self):
-        return Cadastro()
+        return Telas()
 
 
 Main().run()
