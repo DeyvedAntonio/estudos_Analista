@@ -22,11 +22,15 @@ class Telas(ScreenManager):
 
 class Usuario(Screen):
     def show(self):
-        self.ids.rel_users.text = str(usuarios)
+        relacao_usuarios = ''
+        for name, value in usuarios.items():
+            relacao_usuarios += f'Nome: {name:10}, valor: {value}.\n\n'
+        self.ids.rel_users.text = relacao_usuarios
 
 
 class Cadastro(Screen):
     """Classe que representar a tela de cadastro."""
+
     def cadastrar(self):
         nome = self.ids.nome.text
         saldo = self.ids.saldo.text
