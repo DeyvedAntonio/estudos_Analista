@@ -1,5 +1,5 @@
 from kivy.app import App
-from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.button import Button
 from kivy.core.window import Window
 from kivy.uix.screenmanager import Screen, ScreenManager
 import pickle
@@ -22,10 +22,8 @@ class Telas(ScreenManager):
 
 class Usuario(Screen):
     def show(self):
-        relacao_usuarios = ''
-        for name, value in usuarios.items():
-            relacao_usuarios += f'Nome: {name:10}, valor: {value}.\n\n'
-        self.ids.rel_users.text = relacao_usuarios
+        for name in usuarios:
+            self.ids.rel_users.add_widget(Button(text=name))
 
 
 class Cadastro(Screen):
