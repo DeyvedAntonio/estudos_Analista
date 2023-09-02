@@ -8,13 +8,18 @@ Repositório para guardar materiais de cursos realizados enquanto estudo para me
 ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 ## Sobre o projeto
-A pasta [Python](https://github.com/DeyvedAntonio/Estudos_Analista/tree/main/Python) é utilizada para códigos desenvolvidos em Python durante estudos. O estudo de Python terá enfase em Ciência de dados.
+A pasta [Python](https://github.com/DeyvedAntonio/Estudos_Analista/tree/main/python) é utilizada para códigos desenvolvidos em Python durante estudos. O estudo de Python terá enfase em Ciência de dados.
+
+- etl: projeto desenvolvido para explorar IA Generativa em um Pipeline de ETL com Python
+- kivy: projeto desenvolvido para praticar desenvolvimento de software com Python e framework Kivy
 
 ## Layout do projeto
 
 
 ## Competências
-
+- Pandas
+- API request
+- ETL (Extração, Transformação, Carga)
 
 ## Pré-requisitos
 - Python 3.X ou superior
@@ -24,7 +29,7 @@ A pasta [Python](https://github.com/DeyvedAntonio/Estudos_Analista/tree/main/Pyt
 ![](https://img.shields.io/badge/-SQL-orange?style=plastic)
 
 ## Sobre o projeto
-A pasta [SQL]() é utilizada para scripts de códigos desenvolvidos durante os estudos da Linguagem de Consulta Estruturada. O primeiro livro de referência utilizado é [Introdução à Linguagem SQL - Abordagem prática para iniciantes de Thomas Nield](https://www.amazon.com.br/Introdu%C3%A7%C3%A3o-Linguagem-SQL-Abordagem-Iniciantes/dp/8575225014). O material complementar está disponível [aqui](https://github.com/thomasnield/oreilly_getting_started_with_sql).
+A pasta [SQL]() é utilizada para scripts de códigos desenvolvidos durante os estudos da Linguagem de Consulta Estruturada.
 
 ## Layout do projeto
 
@@ -42,8 +47,6 @@ A pasta [Power BI](https://github.com/DeyvedAntonio/Estudos_Analista/tree/main/P
 ![](https://img.shields.io/badge/Microsoft-Power%20BI-blue?style=plastic&logo=Microsoft)
 
 ## Sobre o projeto
-Projeto de cotação de moedas. Esse projeto tem a finalidade de praticar conceitos. Buscar, [API do Banco Central](https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios/resource/ae69aa94-4194-45a6-8bae-12904af7e176), o histórico da cotação do dólar para análise futuras de melhores momentos para compra da moeda americana.
-As moedas serão Dólar americano, Dólar canadense e Euro. Período todo o ano de 2022 e janeiro e fevereiro de 2023.
 
 ## Layout dos Dashboards
 
@@ -65,7 +68,8 @@ As moedas serão Dólar americano, Dólar canadense e Euro. Período todo o ano 
 ### Integrações
 
 >As bibliotecas utilizadas foram:
--
+- Pandas
+- Framework Kivy
 
 
 ## Agradecimentos
@@ -75,16 +79,15 @@ Empresas:
 
 [Data Science Academy](https://www.datascienceacademy.com.br/);
 
-[HASHTAG TREINAMENTOS](https://www.hashtagtreinamentos.com/)
+[HASHTAG TREINAMENTOS](https://www.hashtagtreinamentos.com/);
+
+[DIO](https://web.dio.me/)
 
 ## Autor
 Deyved Antonio
 
-Linkedin:
-https://www.linkedin.com/in/deyved-antonio-161216122/
+[LinkedIn](https://www.linkedin.com/in/deyvedantonio/)
 
-Medium:
-https://medium.com/@deyved.antonio
+[Medium](https://medium.com/@deyved.antonio)
 
-e-mail:
-deyved.antonio@gmail.com
+e-mail: deyved.antonio@gmail.com
