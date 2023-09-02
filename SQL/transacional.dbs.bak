@@ -139,7 +139,6 @@
 	</schema>
 	<connector name="MySql" database="MySql" driver_class="com.mysql.cj.jdbc.Driver" driver_jar="mysql-connector-j-8.0.32.jar" driver_desc="Standard" host="127.0.0.1" port="3307" instance="transacional" user="powerbi" passwd="ZHNhMTIz" useSystemProxy="false" />
 	<layout name="Layout" id="Layout-a88" show_relation="columns" >
-		<comment><![CDATA[modelo_logico_transacional]]></comment>
 		<entity schema="transacional" name="categorias" color="C1D8EE" x="80" y="304" />
 		<entity schema="transacional" name="cliente" color="3986C1" x="560" y="48" />
 		<entity schema="transacional" name="enderecos" color="C1D8EE" x="160" y="48" />
