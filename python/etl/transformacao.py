@@ -2,7 +2,8 @@ import json
 import openai
 from extracao import get_user, extrair_dados
 
-openai_key = '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'
+with open('key_openai.txt', 'r') as key:
+    openai_key = key.read()
 
 # extração do ID's dos usuários
 users_id = extrair_dados()
@@ -10,7 +11,7 @@ users_id = extrair_dados()
 # extração dos usuários apartir dos ID's
 users = [user for id in users_id if (user :=  get_user(id)) is not None]
 
-def mensagem_openai():
+def mensagem_openai(user):
     mensagem = openai.ChatCompletion.create(
         model = "gpt-3.5-turbo",
         messages = [
@@ -20,12 +21,14 @@ def mensagem_openai():
                 },
                 {
                     "role": "user", 
-                    "content": f"Crie mensagens personalizadas para os clientes {users['name']} sobre os benefícios dos investimentos."
+                    "content": f"Crie mensagens personalizadas para os clientes {user['name']} sobre os benefícios dos investimentos."
                 }
             ]
         )
     return mensagem['choices'][0]['message']['content']
 
-users['news'].append(mensagem_openai())
+for user in users:
+    news = mensagem_openai(user)
+    print(news)    
 
 print(users['news'])
