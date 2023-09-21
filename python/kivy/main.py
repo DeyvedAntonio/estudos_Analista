@@ -23,7 +23,13 @@ class Telas(ScreenManager):
 class Usuario(Screen):
     def show(self):
         for name in usuarios:
-            self.ids.rel_users.add_widget(Button(text=name))
+            self.ids.rel_users.add_widget(Botao(name))
+
+
+class Botao(Button):
+    def __init__(self, nome):
+        super().__init__()
+        self.text = nome
 
 
 class Cadastro(Screen):
