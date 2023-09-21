@@ -22,6 +22,7 @@ class Telas(ScreenManager):
 
 class Usuario(Screen):
     def show(self):
+        self.ids.rel_users.clear_widgets()
         for name in usuarios:
             self.ids.rel_users.add_widget(Botao(name))
 

@@ -16,6 +16,7 @@
                 size_hint_y: None
                 id: rel_users
                 orientation: 'vertical'
+                height: self.minimum_height
         Button:
             size_hint_y: 0.1
             font_size: 25
@@ -23,6 +24,8 @@
             on_release: app.root.current = 'tela_cad'
 
 <Botao>:
+    size_hint_y: None
+    height: 30
 
 <Cadastro>:
     BoxLayout:
