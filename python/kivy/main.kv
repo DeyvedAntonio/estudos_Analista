@@ -7,8 +7,20 @@
 <Usuario>:
     on_enter: root.show()
     BoxLayout:
-        id: rel_users
         orientation: 'vertical'
+        padding: 10
+        spacing: 10
+        ScrollView:
+            BoxLayout:
+                spacing: 2
+                size_hint_y: None
+                id: rel_users
+                orientation: 'vertical'
+        Button:
+            size_hint_y: 0.1
+            font_size: 25
+            text: 'CADASTRO'
+            on_release: app.root.current = 'tela_cad'
 
 <Cadastro>:
     BoxLayout:
