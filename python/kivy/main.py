@@ -32,13 +32,21 @@ class Botao(Button):
         super().__init__()
         self.text = nome
 
+    def nome(self):
+        app = App.get_running_app()
+        app.root.current = 'tela_user'
+        ids = app.root.get_screen('tela_user').ids
+        ids.name_user.text = self.text
+
 
 class User(Screen):
     def excluir(self):
         usuario = self.ids.name_user.text
         del usuarios[usuario]
         with open('usuarios.pkl', 'wb') as file:
-            pickle.dump(usuario, file)
+            pickle.dump(usuarios, file)
+        app = App.get_running_app()
+        app.root.current = 'tela_usuarios'
 
     def adicionar(self):
         pass

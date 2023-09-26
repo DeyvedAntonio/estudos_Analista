@@ -28,7 +28,7 @@
 <Botao>:
     size_hint_y: None
     height: 30
-    on_release: app.root.current = 'tela_user'
+    on_release: root.nome()
 
 <Cadastro>:
     BoxLayout:
@@ -85,21 +85,24 @@
             id: name_user
             text: ''
             font_size: 35
+            size_hint_y: None
+            height: 40
+            color: 0, 0, 0, 1
         Button:
-            id: adicionar
             text: 'Adicionar'
             font_size: 22
             on_release: root.adicionar()
-            size_hint_y: 0.3
+            size_hint_y: None
+            height: 40
         Button:
-            id: voltar
             text: 'Voltar'
             font_size: 22
             on_release: app.root.current = 'tela_usuarios'
-            size_hint_y: 0.3
+            size_hint_y: None
+            height: 40
         Button:
-            id: excluir
             text: 'Excluir'
             font_size: 22
             on_release: root.excluir()
-            size_hint_y: 0.3
+            size_hint_y: None
+            height: 40
