@@ -2,7 +2,9 @@
     Cadastro:
         name: 'tela_cad'
     Usuario:
-        name: 'tela_users'
+        name: 'tela_usuarios'
+    User:
+        name: 'tela_user'
 
 <Usuario>:
     on_enter: root.show()
@@ -26,6 +28,7 @@
 <Botao>:
     size_hint_y: None
     height: 30
+    on_release: app.root.current = 'tela_user'
 
 <Cadastro>:
     BoxLayout:
@@ -71,4 +74,32 @@
         Button:
             font_size: 22
             text: 'Usuários'
-            on_release: app.root.current = 'tela_users'
+            on_release: app.root.current = 'tela_usuarios'
+
+<User>:
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 10
+        padding: 10
+        Label:
+            id: name_user
+            text: ''
+            font_size: 35
+        Button:
+            id: adicionar
+            text: 'Adicionar'
+            font_size: 22
+            on_release: root.adicionar()
+            size_hint_y: 0.3
+        Button:
+            id: voltar
+            text: 'Voltar'
+            font_size: 22
+            on_release: app.root.current = 'tela_usuarios'
+            size_hint_y: 0.3
+        Button:
+            id: excluir
+            text: 'Excluir'
+            font_size: 22
+            on_release: root.excluir()
+            size_hint_y: 0.3

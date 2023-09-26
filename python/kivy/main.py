@@ -33,6 +33,17 @@ class Botao(Button):
         self.text = nome
 
 
+class User(Screen):
+    def excluir(self):
+        usuario = self.ids.name_user.text
+        del usuarios[usuario]
+        with open('usuarios.pkl', 'wb') as file:
+            pickle.dump(usuario, file)
+
+    def adicionar(self):
+        pass
+
+
 class Cadastro(Screen):
     """Classe que representar a tela de cadastro."""
 
