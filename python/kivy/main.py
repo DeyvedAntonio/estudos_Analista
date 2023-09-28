@@ -2,6 +2,8 @@ from kivy.app import App
 from kivy.uix.button import Button
 from kivy.core.window import Window
 from kivy.uix.screenmanager import Screen, ScreenManager
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.popup import Popup
 import pickle
 
 
@@ -37,6 +39,7 @@ class Botao(Button):
         app.root.current = 'tela_user'
         ids = app.root.get_screen('tela_user').ids
         ids.name_user.text = self.text
+        ids.saldo_user.text = f'R$ {usuarios[self.text]:.2f}'
 
 
 class User(Screen):
@@ -48,6 +51,8 @@ class User(Screen):
         app = App.get_running_app()
         app.root.current = 'tela_usuarios'
 
+
+class MyPoup(Popup):
     def adicionar(self):
         pass
 
@@ -78,5 +83,5 @@ class Main(App):
     def build(self):
         return Telas()
 
-
-Main().run()
+if __name__ == '__main__':
+    Main().run()
