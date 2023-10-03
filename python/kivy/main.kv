@@ -99,7 +99,7 @@
         Button:
             text: 'Adicionar'
             font_size: 22
-            on_release: Factory.MyPopup().open()
+            on_release: root.saldo()
             size_hint_y: None
             height: 40
         Button:
@@ -114,35 +114,3 @@
             on_release: root.excluir()
             size_hint_y: None
             height: 40
-
-<MyPopup@Popup>:
-    auto_dismiss: False
-    title: 'Adicionar saldo'
-    size_hint: None, None
-    size: 250, 200
-    BoxLayout:
-        orientation: 'vertical'
-        spacing: 15
-        padding: 10
-        TextInput:
-            id: add_saldo
-            input_filter: 'float'
-            multiline: False
-            font_size: 25
-            size_hint_y: None
-            height: 40
-        BoxLayout:
-            spacing: 5
-            padding: 5
-            Button:
-                text: 'Salvar'
-                on_release: 
-                size_hint_y: None
-                size_hint_x: 0.6
-                height: 40
-            Button:
-                text: 'Fechar'
-                on_release: root.dismiss()
-                size_hint_y: None
-                size_hint_x: 0.6
-                height: 40

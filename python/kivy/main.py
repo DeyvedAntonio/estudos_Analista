@@ -4,6 +4,7 @@ from kivy.core.window import Window
 from kivy.uix.screenmanager import Screen, ScreenManager
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.popup import Popup
+from kivy.uix.textinput import TextInput
 import pickle
 
 
@@ -51,11 +52,24 @@ class User(Screen):
         app = App.get_running_app()
         app.root.current = 'tela_usuarios'
 
+    def saldo(self):
+        popup = BoxLayout(orientation='vertical', padding=15, spacing=15)
+        self.pop = Popup(title='Qual valor você deseja inserir?',
+                         content=popup, size_hint=(None, None), size=(300, 200),
+                         title_size=18)
+        self.valor_add = TextInput(multiline=False, input_filter='float',
+                                   font_size=24)
+        popup.add_widget(self.valor_add)
+        popup.add_widget(Button(text='OK', on_release=self.saldo_add))
+        self.pop.open()
 
-class MyPoup(Popup):
-    def adicionar(self):
-        pass
-
+    def saldo_add(self, *args):
+        v_atual = usuarios[self.ids.name_user.text] + float(self.valor_add.text)
+        usuarios[self.ids.name_user.text] = v_atual
+        with open('usuarios.pkl', 'wb') as file:
+            pickle.dump(usuarios, file)
+        self.pop.dismiss()
+        self.ids.saldo_user.text = f'RS {v_atual:.2f}'
 
 class Cadastro(Screen):
     """Classe que representar a tela de cadastro."""
