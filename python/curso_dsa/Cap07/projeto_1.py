@@ -10,16 +10,54 @@ def escolher_palavra():
         return random.choice(conteudo.split('\n'))
 
 def exibir_forca(erros):
-    if erros == 0:
-        print('''
+    if erros == 1:
+        print(r'''
     _____
     |   |
-    |   
+    |   O
     |
     |   
-    -----''')
-    elif erros == 1:
-        pass
+    |-----''', end='\n')
+    elif erros == 2:
+        print(r'''
+    _____
+    |   |
+    |   O
+    |   |
+    |   
+    |-----''', end='\n')
+    elif erros == 3:
+        print(r'''
+    _____
+    |   |
+    |   O
+    |  /|
+    |   
+    |-----''', end='\n')
+    elif erros == 4:
+        print(r'''
+    _____
+    |   |
+    |   O
+    |  /|\
+    |   
+    |-----''', end='\n')
+    elif erros == 5:
+        print(r'''
+    _____
+    |   |
+    |   O
+    |  /|\
+    |  /
+    |-----''', end='\n')
+    elif erros == 6:
+        print(r'''
+    _____
+    |   |
+    |   O
+    |  /|\
+    |  / \
+    |-----''', end='\n')
 
 def exibir_palavra(palavra, letras_corretas):
     for letra in palavra:
@@ -32,6 +70,7 @@ def exibir_palavra(palavra, letras_corretas):
 
 def jogo_forca():
     palavra_escolhida = escolher_palavra()
+    contador = len(palavra_escolhida)
     letras_corretas = []
     letras_incorretas = []
     tentativas_restantes = 6
@@ -40,6 +79,9 @@ def jogo_forca():
         exibir_palavra(palavra_escolhida, letras_corretas)
         print(f'\n\nChances restantes: {tentativas_restantes}')
         print(f'Letras erradas: {[letras_incorretas[index] for index, letra in enumerate(letras_incorretas)]}\n')
+        if len(letras_corretas) == contador:
+            print(f'\nVocê venceu, a palavra é : {palavra_escolhida}')
+            break
         
         try:
             tentativa = str(input('Digite uma letra: '))
@@ -48,9 +90,6 @@ def jogo_forca():
         
         if tentativa in palavra_escolhida:
             letras_corretas.append(tentativa)
-            # exibir_palavra(palavra_escolhida, letras_corretas)
-            if len(letras_corretas) == len(palavra_escolhida):
-                print(f'\nVocê venceu, a palavra é : {palavra_escolhida}')
         else:
             letras_incorretas.append(tentativa)
             tentativas_restantes -= 1
