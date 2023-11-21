@@ -12,6 +12,7 @@ A pasta [Python](https://github.com/DeyvedAntonio/Estudos_Analista/tree/main/pyt
 
 - etl: projeto desenvolvido para explorar IA Generativa em um Pipeline de ETL com Python
 - kivy: projeto desenvolvido para praticar desenvolvimento de software com Python e framework Kivy
+- [Projeto 1](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/python/curso_dsa/Cap07): projeto desenvolvido para praticar as habilidades de programação.
 
 ## Layout do projeto
 
