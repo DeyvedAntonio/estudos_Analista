@@ -79,58 +79,50 @@ class Hangman:
           except FileNotFoundError:
                print('Arquivos não encontrado.')
           
-          print('Seja Bem-vindo(a)')
-          print(f'{board[0]}\n')
+          palavra_sorteada = random.choice(lista_palavras.split('\n'))
           
-          palavra = random.choice(lista_palavras.split('\n'))
-          self.advinhar_letra(palavra)
+          print('\nSeja Bem-vindo(a)')
+          print(f'{board[0]}\n')
+          self.advinhar_letra(palavra_sorteada)
 
 	# Método para adivinhar a letra
-     def advinhar_letra(self, palavra_sorteada: str):
-          tentativas = 6
-          letras_erradas = []
+     def advinhar_letra(self, palavra):
           letras_tentativas = []
-          letras_unicas = set(palavra_sorteada)
-          letras_certas = []
-          self.esconder_letra(palavra_sorteada)
+          letras_erradas = []
           fim_jogo = False
-
+          tentativas = 6
+          
           while fim_jogo == False:
-               print(f'\n\nChances restantes: {tentativas}')
-               print(f'Letras erradas: {letras_erradas[:]}')
-               letra = input('\nDigite uma letra: ')
-               if letra not in palavra_sorteada:
-                    letras_erradas.append(letra)
-                    letras_tentativas.append(letra)
+               self.esconder_letra(palavra)
+               print(f'\n\nTentativas restantes: {tentativas}')
+               print(f'Letras erradas: {letras_erradas}')
+               letra_escolhida = input('Digite uma letra: ')
+               if letra_escolhida in letras_tentativas:
+                    print('Tente outra letra!')
+                    continue
+               elif letra_escolhida not in palavra:
+                    letras_erradas.append(letra_escolhida)
+                    letras_tentativas.append(letra_escolhida)
                     tentativas -= 1
                else:
-                    letras_tentativas.append(letra)
-                    letras_certas.append(letra)
+                    letras_tentativas.append(letra_escolhida)
                
-               if tentativas != 0:
-                    self.status_jogo(palavra_sorteada, letras_certas, len(letras_erradas))
-               
-               fim_jogo = self.jogador_venceu(letras_unicas, letras_certas)
-               fim_jogo = self.acabou_jogo(tentativas, palavra_sorteada)
+               fim_jogo = self.status_jogo(tentativas, len(letras_erradas))
 
 	# Método para verificar se o jogo terminou
-     def acabou_jogo(self, tentativas, palavra):
+     def acabou_jogo(self, tentativas: int) -> None:
           if tentativas == 0:
-               print(f'\n{board[-1]}\n\nVocê perdeu! A palavra correta é {palavra}.\n')
+               print(f'\nFim do jogo.')
                return True
           else:
                return False
 		
 	# Método para verificar se o jogador venceu
-     def jogador_venceu(self, conjunto_unico, conjunto_certas):
-          if len(conjunto_certas) == len(conjunto_unico):
-               print('\nParabéns você venceu!')
-               return True
-          else:
-               return False
+     def jogador_venceu(self):
+          pass
 		
 	# Método para não mostrar a letra no board
-     def esconder_letra(self, texto: str) -> None:
+     def esconder_letra(self, texto):
           for letra in texto:
                if letra == ' ':
                     print(' ', end=' ')
@@ -138,14 +130,14 @@ class Hangman:
                     print('_', end=' ')
 		
 	# Método para checar o status do game e imprimir o board na tela
-     def status_jogo(self, palavra: str, certas: list, tamanho: int) -> None:
-          print(f'\n{board[tamanho]}\n')
-          for letra in palavra:
-               if letra in certas:
-                    print(letra, end=' ')
-               else:
-                    self.esconder_letra(letra)
-
+     def status_jogo(self, tentativas, erradas=0):
+          fim = self.acabou_jogo(tentativas)
+          if fim == True:
+               # TODO: verificar se jogador ganhou
+               return True
+          else:
+               print(f'{board[erradas]}\n')
+               return False
 
 if __name__ == '__main__':
      jogo = Hangman()
