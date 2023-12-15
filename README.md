@@ -89,6 +89,8 @@ Empresas:
 
 [DIO](https://web.dio.me/)
 
+[Descomplidados](https://www.linkedin.com/company/descomplidados/)
+
 ## Autor
 Deyved Antonio
 
