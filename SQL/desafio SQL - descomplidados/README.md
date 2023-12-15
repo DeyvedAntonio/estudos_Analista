@@ -13,8 +13,6 @@ A segunda parte consiste de exercícios propostos baseados no dataset de filmes 
 
 ![image](https://github.com/DeyvedAntonio/estudos_Analista/assets/26858993/60f53b0b-d23e-45b2-9df9-ed01d5e91830)
 
-## Layout do projeto
-
 ## Competências
 - EDA
 - ETL
