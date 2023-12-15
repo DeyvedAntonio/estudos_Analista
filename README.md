@@ -32,15 +32,20 @@ A pasta [Python](https://github.com/DeyvedAntonio/Estudos_Analista/tree/main/pyt
 ## Sobre o projeto
 A pasta [SQL]() é utilizada para scripts de códigos desenvolvidos durante os estudos da Linguagem de Consulta Estruturada.
 
+- [Desafio SQL - Descomplidados](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/SQL/desafio%20SQL%20-%20descomplidados)
+
 ## Layout do projeto
 
 
 ## Competências
-
+- ETL
+- EDA (Análise Exploratória dos Dados)
+- Pandas
 
 ## Pré-requisitos
 - SQLITE
-
+- Python
+- Pandas
 
 # Power BI
 A pasta [Power BI](https://github.com/DeyvedAntonio/Estudos_Analista/tree/main/Power%20BI) é utilizada para arquivos de estudos e visualização de dados na ferramenta Power BI da Microsoft. Os arquivos com a extensão em .pbix deverão ser abertos no Power BI Desktop.
