@@ -4,6 +4,7 @@
 
 ## Sobre o projeto
 - O 1° desafio com Power BI da DIO. Esse desafio visa treinar a habilidade de criação de visuais.
+  - os arquivos desse desafio são desafio_formação.pdf e desafio_formação.pbix
 
 
 ## Layout dos Dashboards
@@ -20,3 +21,8 @@
 ## Competências
 - Extrair dados de diversas fontes
 - Criação de relatórios
+
+## Para rodar esse projeto
+- 1° desafio:
+  - baixe o arquivo desafio_formação.pbix;
+  - abra no Power BI desktop.
