@@ -10,20 +10,27 @@ Repositório para guardar materiais de cursos realizados enquanto estudo para me
 ## Sobre o projeto
 A pasta [Python](https://github.com/DeyvedAntonio/Estudos_Analista/tree/main/python) é utilizada para códigos desenvolvidos em Python durante estudos. O estudo de Python terá enfase em Ciência de dados.
 
-- etl: projeto desenvolvido para explorar IA Generativa em um Pipeline de ETL com Python
-- kivy: projeto desenvolvido para praticar desenvolvimento de software com Python e framework Kivy
-- [Projeto 1](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/python/curso_dsa/Cap07): projeto desenvolvido para praticar as habilidades de programação.
+- etl: projeto desenvolvido para explorar IA Generativa em um Pipeline de ETL com Python;
+- kivy: projeto desenvolvido para praticar desenvolvimento de software com Python e framework Kivy;
+- [Projeto 1](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/python/curso_dsa/Cap07): projeto desenvolvido para praticar as habilidades de programação;
+- [desenvolvimento web](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/python/desenvolvimento_web): projeto desenvolvido para praticar as habilidades de desenvolvimento web com framework Django. 
 
 ## Layout do projeto
 
+- Arquitetura simples de separação de competências do projeto de [desenvolvimento web](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/python/desenvolvimento_web)
+
+<img width="655" height="412" alt="image" src="https://github.com/user-attachments/assets/a3b32713-f79c-4af9-bca2-8a957112ba4e" />
 
 ## Competências
 - Pandas
 - API request
 - ETL (Extração, Transformação, Carga)
+- Django
+- Banco de dados relacional
 
 ## Pré-requisitos
 - Python 3.X ou superior
+- Django 5.2 ou superior
 
 
 # SQL para Ciência de dados
