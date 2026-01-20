@@ -10,6 +10,8 @@ O objetivo desta etapa é compreender e explicar a separação entre interface, 
 
 O sistema é estruturado em três camadas principais, cada uma com responsabilidades bem definidas.
 
+<img width="655" height="412" alt="image" src="https://github.com/user-attachments/assets/79658e58-e830-4109-aaab-04bfd787a13c" />
+
 ### 2.1 Interface (Frontend)
 
 A interface é responsável pela interação direta com o usuário final, permitindo:
