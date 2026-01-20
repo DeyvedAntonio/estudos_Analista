@@ -12,13 +12,14 @@ Ao final desta semana, ser capaz de criar e executar o projeto SAAC do zero, com
 
 Estrutura esperada ao final da semana:
 
+```
 ambiente_django/
 ├── pyproject.toml
 ├── poetry.lock
 └── saac/
     ├── manage.py
     └── saac/
-
+```
 
 O ambiente virtual é gerenciado automaticamente pelo Poetry.
 
@@ -26,24 +27,32 @@ O ambiente virtual é gerenciado automaticamente pelo Poetry.
 
 Caso o Poetry ainda não esteja instalado no sistema:
 
-`pip install poetry`
+```
+pip install poetry
+```
 
 
 Verifique a instalação:
 
-`poetry --version`
+```
+poetry --version
+```
 
 ## 2. Criação do Ambiente do Projeto
 
 Crie o diretório do projeto e acesse-o:
 
-`mkdir ambiente_django
-cd ambiente_django`
+```
+mkdir ambiente_django
+cd ambiente_django
+```
 
 
 Inicialize o Poetry:
 
-`poetry init`
+```
+poetry init
+```
 
 
 Durante a inicialização:
@@ -58,7 +67,9 @@ Esse processo criará o arquivo pyproject.toml.
 
 Adicione o Django como dependência do projeto:
 
-`poetry add django`
+```
+poetry add django
+```
 
 
 O Poetry irá:
@@ -73,8 +84,9 @@ O Poetry irá:
 
 Ative o ambiente virtual gerenciado pelo Poetry:
 
-´poetry shell´
-
+```
+poetry shell
+```
 
 A partir deste ponto, todos os comandos Python e Django estarão associados ao ambiente do projeto SAAC.
 
@@ -82,8 +94,9 @@ A partir deste ponto, todos os comandos Python e Django estarão associados ao a
 
 Com o ambiente ativo, crie o projeto Django:
 
-`poetry run django-admin startproject saac`
-
+```
+poetry run django-admin startproject saac
+```
 
 Esse comando cria:
 
@@ -95,19 +108,23 @@ Esse comando cria:
 
 Acesse o diretório do projeto:
 
-`cd saac`
-
+```
+cd saac
+```
 
 Execute o servidor de desenvolvimento:
 
-`poetry run python manage.py runserver`
-
+```
+poetry run python manage.py runserver
+```
 
 Se não houver erros, o servidor estará disponível em:
 
 http://127.0.0.1:8000/
 
 A página padrão do Django deverá ser exibida no navegador.
+
+<img width="1919" height="1079" alt="Captura de tela 2026-01-20 104953" src="https://github.com/user-attachments/assets/4912d29f-d62f-4d27-bf26-44796b51314a" />
 
 ## 7. Entendimento dos Componentes Utilizados
 
@@ -137,3 +154,7 @@ Script que executa comandos administrativos dentro do contexto do projeto Django
 
 Servidor local fornecido pelo Django para testes durante o desenvolvimento.
 Não deve ser utilizado em ambiente de produção.
+
+<img width="883" height="411" alt="Captura de tela 2026-01-20 104911" src="https://github.com/user-attachments/assets/dee4cdc4-8816-4d55-b359-b87d294fc65b" />
+
+<img width="896" height="234" alt="Captura de tela 2026-01-20 104934" src="https://github.com/user-attachments/assets/50e1c6ad-06da-453b-a71b-8df6df7ddb40" />
