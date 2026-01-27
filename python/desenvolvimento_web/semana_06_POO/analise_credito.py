@@ -1,27 +1,36 @@
 class AnaliseCredito:
 
-    def __init__(self, nome_cliente, renda_mensal, valor_solicitado, score_credito, status_analise='Em Análise') -> None:  # NOQA: E501
-        self.identificador = f'{renda_mensal}{valor_solicitado}{score_credito}'  # NOQA: E501
+    def __init__(
+        self,
+        nome_cliente,
+        renda_mensal,
+        valor_solicitado,
+        score_credito,
+        status_analise='Em Análise'
+    ) -> None:
+        self.identificador = f'{renda_mensal}_\
+            {valor_solicitado}_{score_credito}'
         self.nome_cliente = nome_cliente
         self.renda_mensal = renda_mensal
         self.valor_solicitado = valor_solicitado
         self.score_credito = score_credito
         self.status_analise = status_analise
 
-    def mensagem_analise(self, nome_cliente, status):
-        return f'Caro, {nome_cliente} sua solicitação foi {status}.'
+    def mensagem_analise(self):
+        return f'Caro, {self.nome_cliente} \
+            sua solicitação foi {self.status_analise}.'
 
     def avaliar_risco(self) -> str:
 
         if self.valor_solicitado > (self.renda_mensal * 0.3):
             self.status_analise = 'Reprovada'
-            return self.mensagem_analise(self.nome_cliente, self.status_analise)  # NOQA: E501
+            return self.mensagem_analise()
         elif self.score_credito <= 600:
             self.status_analise = 'Reprovada'
-            return self.mensagem_analise(self.nome_cliente, self.status_analise)  # NOQA: E501
+            return self.mensagem_analise()
         else:
             self.status_analise = 'Aprovada'
-            return self.mensagem_analise(self.nome_cliente, self.status_analise)  # NOQA: E501
+            return self.mensagem_analise()
 
 
 if __name__ == '__main__':
