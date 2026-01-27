@@ -8,17 +8,20 @@ class AnaliseCredito:
         self.score_credito = score_credito
         self.status_analise = status_analise
 
+    def mensagem_analise(self, nome_cliente, status):
+        return f'Caro, {nome_cliente} sua solicitação foi {status}.'
+
     def avaliar_risco(self) -> str:
 
         if self.valor_solicitado > (self.renda_mensal * 0.3):
             self.status_analise = 'Reprovada'
-            return f'Caro, {self.nome_cliente} sua solicitação {self.identificador} foi {self.status_analise}.'  # NOQA: E501
+            return self.mensagem_analise(self.nome_cliente, self.status_analise)  # NOQA: E501
         elif self.score_credito <= 600:
             self.status_analise = 'Reprovada'
-            return f'Caro, {self.nome_cliente} sua solicitação {self.identificador} foi {self.status_analise}.'  # NOQA: E501
+            return self.mensagem_analise(self.nome_cliente, self.status_analise)  # NOQA: E501
         else:
             self.status_analise = 'Aprovada'
-            return f'Caro, {self.nome_cliente} sua solicitação {self.identificador} foi {self.status_analise}.'  # NOQA: E501
+            return self.mensagem_analise(self.nome_cliente, self.status_analise)  # NOQA: E501
 
 
 if __name__ == '__main__':
