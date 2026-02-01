@@ -4,7 +4,15 @@
 
 ## Sobre o projeto
 - O 1° desafio com Power BI da DIO. Esse desafio visa treinar a habilidade de criação de visuais.
-  - os arquivos desse desafio são desafio_formação.pdf e desafio_formação.pbix
+  - os arquivos desse desafio são desafio_formação.pdf e desafio_formação.pbix que estão dentro da pasta desafio
+
+- *semana_06_POO*:
+  - ➡️ Exercício de modelagem mental e analítica, não técnico-operacional.
+
+  - O objetivo é:
+    - Treinar pensamento analítico orientado a dados
+    - Aprender a extrair valor decisório de uma entidade
+    - Pensar antes da ferramenta
 
 
 ## Layout dos Dashboards
