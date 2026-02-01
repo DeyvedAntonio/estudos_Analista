@@ -13,7 +13,7 @@ A pasta [Python](https://github.com/DeyvedAntonio/Estudos_Analista/tree/main/pyt
 - etl: projeto desenvolvido para explorar IA Generativa em um Pipeline de ETL com Python;
 - kivy: projeto desenvolvido para praticar desenvolvimento de software com Python e framework Kivy;
 - [Projeto 1](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/python/curso_dsa/Cap07): projeto desenvolvido para praticar as habilidades de programação;
-- [desenvolvimento web](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/python/desenvolvimento_web): projeto desenvolvido para praticar as habilidades de desenvolvimento web com framework Django. 
+- [desenvolvimento web](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/python/desenvolvimento_web): projeto desenvolvido para praticar as habilidades de desenvolvimento web com framework Django.
 
 ## Layout do projeto
 
@@ -22,6 +22,7 @@ A pasta [Python](https://github.com/DeyvedAntonio/Estudos_Analista/tree/main/pyt
 <img width="655" height="412" alt="image" src="https://github.com/user-attachments/assets/a3b32713-f79c-4af9-bca2-8a957112ba4e" />
 
 ## Competências
+
 - Pandas
 - API request
 - ETL (Extração, Transformação, Carga)
@@ -29,12 +30,13 @@ A pasta [Python](https://github.com/DeyvedAntonio/Estudos_Analista/tree/main/pyt
 - Banco de dados relacional
 
 ## Pré-requisitos
+
 - Python 3.X ou superior
 - Django 5.2 ou superior
 
-
 # SQL para Ciência de dados
-![](https://img.shields.io/badge/-SQL-orange?style=plastic)
+
+![badge](https://img.shields.io/badge/-SQL-orange?style=plastic)
 
 ## Sobre o projeto
 A pasta [SQL]() é utilizada para scripts de códigos desenvolvidos durante os estudos da Linguagem de Consulta Estruturada.
