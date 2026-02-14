@@ -42,16 +42,16 @@ A pasta [Python](https://github.com/DeyvedAntonio/Estudos_Analista/tree/main/pyt
 A pasta [SQL]() é utilizada para scripts de códigos desenvolvidos durante os estudos da Linguagem de Consulta Estruturada.
 
 - [Desafio SQL - Descomplidados](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/SQL/desafio%20SQL%20-%20descomplidados)
-
-## Layout do projeto
-
+- [Desafio Modelagem - DIO](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/SQL/desenvolvimento_web/semana_07)
 
 ## Competências
+- Modelagem de dados
 - ETL
 - EDA (Análise Exploratória dos Dados)
 - Pandas
 
 ## Pré-requisitos
+- MySQL Workbench
 - SQLITE
 - Python
 - Pandas
