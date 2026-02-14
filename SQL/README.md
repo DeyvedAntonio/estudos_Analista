@@ -12,7 +12,7 @@
     - Definir a entidade de forma consistente
     - Traduzir o código (POO) para o mundo relacional
 
--  desenvolvimento_web/*semana_07*
+- desenvolvimento_web/*semana_07*
   - ➡️ Desafio sobre modelagem de E-commerce
   - O objetivo é:
     - Refine o modelo apresentado acrescentando os seguintes pontos:
