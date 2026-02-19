@@ -14,6 +14,7 @@
     - Aprender a extrair valor decisório de uma entidade
     - Pensar antes da ferramenta
 
+- A pasta cap_02 possui o arquivo do Power BI com a resolução proposta.
 
 ## Layout dos Dashboards
 
