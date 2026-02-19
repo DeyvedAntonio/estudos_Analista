@@ -63,7 +63,8 @@ A pasta [Power BI](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/p
 
 ## Sobre o projeto
 - O Power BI é uma plataforma unificada e escalonável para autoatendimento e BI (business intelligence) empresarial.
-- O 1° desafio com Power BI da DIO. Esse desafio visa treinar a habilidade de criação de visuais.
+  - O 1° desafio com Power BI da DIO. Esse desafio visa treinar a habilidade de criação de visuais.
+  - O lab_01 do Curso da DSA. Construir o primeiro Dashboard do curso.
 
 
 ## Layout dos Dashboards
@@ -75,6 +76,8 @@ A pasta [Power BI](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/p
 
 <img width="1465" height="820" alt="image" src="https://github.com/user-attachments/assets/b6c6e713-0897-4ded-80c4-7adb07881127" />
 
+### Lab_01
+<img width="1492" height="840" alt="Screenshot 2026-02-18 212627" src="https://github.com/user-attachments/assets/69662be0-afe0-430c-9f81-fc5d03d67d4e" />
 
 ## Competências
 - Extrair dados de diversas fontes
