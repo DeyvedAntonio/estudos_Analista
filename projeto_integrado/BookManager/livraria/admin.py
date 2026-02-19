@@ -10,5 +10,5 @@ class AutorAdmin(admin.ModelAdmin):
 
 @admin.register(Livro)
 class LivroAdmin(admin.ModelAdmin):
-    fields = ['titulo', 'preco', 'data_publicacao', 'autor']
+    fields = ['titulo', 'preco', 'data_publicacao', 'autor', 'estoque', ]
     search_fields = ['titulo', 'autor']
