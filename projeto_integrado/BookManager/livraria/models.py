@@ -45,6 +45,7 @@ class Livro(models.Model):
         related_name='fk_livro_autor',
         verbose_name='Autor do Livro',
     )
+    estoque = models.IntegerField(verbose_name='Quantidade em estoque')
 
     def __str__(self) -> str:
         return f'{self.titulo} - {self.autor}'
