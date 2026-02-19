@@ -15,6 +15,14 @@
     - Pensar antes da ferramenta
 
 - A pasta cap_02 possui o arquivo do Power BI com a resolução proposta.
+  - O objetivo é:
+    - Trabalhar com os dados de vendas de uma empresa ficticia que comercializa produtos em todos os cantos do mundo;
+    - Responder as perguntas abaixo:
+      - Qual o valor total vendido?
+      - Quantas vendas foram realizadas por categoria de produto?
+      - Quantas vendas foram realizadas por país considerando a prioridade de entrega?
+      - Qual foi a média de desconto nas vendas por subcategoria de produto?
+      - Quais países tiveram maior média de valor de venda? Demostre em um mapa.
 
 ## Layout dos Dashboards
 
@@ -26,6 +34,10 @@
 
 <img width="1465" height="820" alt="image" src="https://github.com/user-attachments/assets/b6c6e713-0897-4ded-80c4-7adb07881127" />
 
+### Laboratório 01
+
+<img width="1492" height="840" alt="Screenshot 2026-02-18 212627" src="https://github.com/user-attachments/assets/0936e315-3d39-4938-9570-4539cef95c6a" />
+
 
 ## Competências
 - Extrair dados de diversas fontes
@@ -34,4 +46,9 @@
 ## Para rodar esse projeto
 - 1° desafio:
   - baixe o arquivo desafio_formação.pbix;
+  - abra no Power BI desktop.
+
+- Laboratório 01:
+  - entre na pasta cap_02;
+  - baixe o arquivo lab_01.pbix e
   - abra no Power BI desktop.
