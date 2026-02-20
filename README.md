@@ -127,6 +127,10 @@ A pasta [Power BI](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/p
 
 <img width="475" height="478" alt="Screenshot 2026-02-19 215407" src="https://github.com/user-attachments/assets/7288667c-b56c-4b86-b1d5-e4c9c6e60ae4" />
 
+>Power BI
+
+<img width="1489" height="565" alt="Screenshot 2026-02-20 171959" src="https://github.com/user-attachments/assets/eb3ef99e-aa3a-4e34-87c6-d2d92a333812" />
+
 ### Como rodar o Projeto Integrado
 
 ### Informações complementaras dos projetos
