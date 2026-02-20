@@ -4,7 +4,7 @@
 
 ### Sobre os projetos
 
-Repositório para guardar materiais de cursos realizados enquanto estudo para me tornar um analista de dados e desenvolvedor web. O projeto é dividido em três ferramentas [Python](https://github.com/DeyvedAntonio/Estudos_Analista#python-para-an%C3%A1lise-de-dados), [SQL](https://github.com/DeyvedAntonio/Estudos_Analista#sql-para-ci%C3%AAncia-de-dados) e [Power BI](https://github.com/DeyvedAntonio/Estudos_Analista#power-bi). Possui um projeto que visa reunir todos os conceitos de forma prática [projeto_integrado](https://github.com/DeyvedAntonio/Estudos_Analista#Projeto%C3Integrado)
+Repositório para guardar materiais de cursos realizados enquanto estudo para me tornar um analista de dados e desenvolvedor web. O projeto é dividido em três ferramentas [Python](https://github.com/DeyvedAntonio/Estudos_Analista#python-para-an%C3%A1lise-de-dados), [SQL](https://github.com/DeyvedAntonio/Estudos_Analista#sql-para-ci%C3%AAncia-de-dados) e [Power BI](https://github.com/DeyvedAntonio/Estudos_Analista#power-bi). Possui um projeto que visa reunir todos os conceitos de forma prática [projeto_integrado](https://github.com/DeyvedAntonio/Estudos_Analista#projeto-integrado)
 
 ## Python para Análise de dados
 
@@ -122,6 +122,10 @@ A pasta [Power BI](https://github.com/DeyvedAntonio/estudos_Analista/tree/main/p
 - Power BI
 
 ### Layout do Projeto Integrado
+
+>Querys
+
+<img width="475" height="478" alt="Screenshot 2026-02-19 215407" src="https://github.com/user-attachments/assets/7288667c-b56c-4b86-b1d5-e4c9c6e60ae4" />
 
 ### Como rodar o Projeto Integrado
 
