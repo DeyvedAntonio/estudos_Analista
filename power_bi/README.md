@@ -14,15 +14,10 @@
     - Aprender a extrair valor decisório de uma entidade
     - Pensar antes da ferramenta
 
-- A pasta cap_02 possui o arquivo do Power BI com a resolução proposta.
+- As pastas cap_02, cap_03, cap_04 possuem os arquivos do Power BI com as resoluções propostas.
   - O objetivo é:
-    - Trabalhar com os dados de vendas de uma empresa ficticia que comercializa produtos em todos os cantos do mundo;
-    - Responder as perguntas abaixo:
-      - Qual o valor total vendido?
-      - Quantas vendas foram realizadas por categoria de produto?
-      - Quantas vendas foram realizadas por país considerando a prioridade de entrega?
-      - Qual foi a média de desconto nas vendas por subcategoria de produto?
-      - Quais países tiveram maior média de valor de venda? Demostre em um mapa.
+    - Trabalhar com os dados de uma empresa ficticia;
+    - Responder as perguntas de acordo com cada contexto.
 
 ## Layout dos Dashboards
 
@@ -38,6 +33,10 @@
 
 <img width="1492" height="840" alt="Screenshot 2026-02-18 212627" src="https://github.com/user-attachments/assets/0936e315-3d39-4938-9570-4539cef95c6a" />
 
+### Mini_Projeto 1
+>Visão Cliente
+
+<img width="1493" height="838" alt="Screenshot 2026-03-08 085802" src="https://github.com/user-attachments/assets/cbd235a3-d4af-45bb-9918-928f568bec52" />
 
 ## Competências
 - Extrair dados de diversas fontes
@@ -51,4 +50,9 @@
 - Laboratório 01:
   - entre na pasta cap_02;
   - baixe o arquivo lab_01.pbix e
+  - abra no Power BI desktop.
+
+- Mini-Projeto 1:
+  - entre na pasta cap_04;
+  - baixe o arquivo projeto_01.pbix e
   - abra no Power BI desktop.
