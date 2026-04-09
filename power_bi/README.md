@@ -38,6 +38,11 @@
 
 <img width="1493" height="838" alt="Screenshot 2026-03-08 085802" src="https://github.com/user-attachments/assets/cbd235a3-d4af-45bb-9918-928f568bec52" />
 
+### Mini_Projeto 3
+>Análise de dados de RH
+
+<img width="1494" height="840" alt="Screenshot 2026-04-09 072014" src="https://github.com/user-attachments/assets/71046bad-bb24-4626-964d-c6fd71f0e877" />
+
 ## Competências
 - Extrair dados de diversas fontes
 - Criação de relatórios
@@ -55,4 +60,9 @@
 - Mini-Projeto 1:
   - entre na pasta cap_04;
   - baixe o arquivo projeto_01.pbix e
+  - abra no Power BI desktop.
+
+- Mini-Projeto 3:
+  - entre na pasta cap_06;
+  - baixe o arquivo projeto_03.pbix e
   - abra no Power BI desktop.
