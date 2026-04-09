@@ -54,7 +54,6 @@ A pasta [SQL]() é utilizada para scripts de códigos desenvolvidos durante os e
 - Modelagem de dados
 - ETL
 - EDA (Análise Exploratória dos Dados)
-- Pandas
 
 ### Pré-requisitos de SQL
 
