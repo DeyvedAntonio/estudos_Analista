@@ -1,0 +1,22 @@
+[project]
+name = "books"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Deyved Antonio",email = "deyved.antonio@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "django (>=6.0.4,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.15.9"
+pytest = "^9.0.3"
+
