@@ -44,5 +44,8 @@ class Livro(models.Model):
         help_text='Quantidade de Livros disponíveis para empréstimos',
     )
 
+    class Meta:
+        ordering = ['titulo', 'autor', 'isbn',]
+
     def __str__(self) -> str:
         return f'{self.titulo} - Autor: {self.autor}'
