@@ -1,0 +1,18 @@
+[project]
+name = "tutorial-django"
+version = "0.1.0"
+description = "Tutorial da documentação do Django."
+authors = [
+    {name = "Deyved Antonio",email = "deyved.antonio@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "django (==6.0.4)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
