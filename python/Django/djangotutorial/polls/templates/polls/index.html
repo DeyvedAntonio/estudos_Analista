@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+{% load static %}
+
 <html>
-<head>
-<title>
-Question
-</title>
-</head>
+    <head>
+        <title>
+            Question
+        </title>
+        <link rel="stylesheet" href="{% static 'polls/style.css' %}"><!DOCTYPE html>
+    </head>
 <body>
 {% if latest_question_list %}
     <ul>
